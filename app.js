@@ -11,7 +11,7 @@ const permute = require('./permutationGenerator')
 const fakeUsers = () => {
     addUser({id:'1', username:'Groot'})
     addUser({id:'2', username:'Ayan'})
-    addUser({id:'3', username:'shaheen'})
+    //addUser({id:'3', username:'shaheen'})
 }
 const choice = permute([1, 2, 3, 4])
 
@@ -23,8 +23,8 @@ io.on('connection', (socket) => {
         socket.emit('myID', myID, userName)
         //clearArray()
         addUser({id:myID, username:userName})
-        //if(userName == 'Anik404') fakeUsers()
-        fakeUsers()
+        if(userName == 'Anik404') fakeUsers()
+        //fakeUsers()
     })
 
     socket.on('getConnectionList', (message)=>{
