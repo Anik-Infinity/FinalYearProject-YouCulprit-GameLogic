@@ -10,7 +10,7 @@ const { addUser, getUser, removeUser, getUserList, clearArray} = require('./user
 const permute = require('./permutationGenerator')
 const fakeUsers = () => {
     addUser({id:'1', username:'Groot'})
-    addUser({id:'2', username:'Ayan'})
+    //addUser({id:'2', username:'Ayan'})
     //addUser({id:'3', username:'shaheen'})
 }
 const choice = permute([1, 2, 3, 4])
