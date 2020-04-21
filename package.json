@@ -9,8 +9,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js",
+    "dev": "node app.js"
   },
   "author": "",
   "license": "ISC"
 }
+ 
